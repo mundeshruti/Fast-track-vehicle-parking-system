@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        *{
+            align-items: center;
+            text-align: center;
+            flex-direction: row;
+        }
+        #header {
+            background: #a6b2be;
+            font-family: 'Roboto', sans-serif;
+            padding: 0px;
+            margin: 0px;
+            text-align: center;
+            margin-bottom: 0.5rem;
+            font-weight: 100;
+            line-height: 1.2;
+            font-size: 1rem;
+            font-display: bold;
+        }
+
+        #header h1 {
+            color: rgb(5, 4, 4);
+        }
+
+        #header ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        #header ul li {
+            list-style-type: none;
+            margin: 0px 10px;
+            padding: 4px 10px;
+        }
+
+        #header ul li a {
+            color: rgb(97, 78, 78);
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.5s ease;
+
+        }
+
+        #header ul li a:hover {
+            color: rgb(0, 0, 0);
+        }
+
+        body,
+        html {
+            height: 100%;
+            min-height: 100%;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            margin: 0;
+
+        }
+
+        .form-header {
+            height: 60px;
+            padding: 20px 30px 0;
+            border-bottom: 1px solid #e1e8ee;
+        }
+
+        .form-body {
+            height: 340px;
+            padding: 30px 30px 20px;
+        }
+
+        .title {
+            font-size: 18px;
+            margin: 0;
+            color: #5e6977;
+        }
+
+        .header {
+
+            padding: 10px;
+            margin: 0px;
+            width: 50;
+            height: 100px;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+
+        img {
+            border: 5px;
+            padding: 10px;
+            margin: 10px;
+
+        }
+
+        .button {
+            border: 0cm;
+            color: antiquewhite;
+        }
+
+        .submit {
+            padding: 10px;
+            margin: 3px;
+            font-weight: bold;
+            background-color: aqua;
+        }
+        div {
+            border: 1cm;
+            table-layout: 0cm;
+            display: inline-block;
+            width: 300;
+            height: 300;
+        }
+
+        h3 {
+            text-align: right;
+            color: #000;
+            padding-top: 10%;
+        }
+        #one{
+            padding-left: 30%;
+            padding-right: 10%;
+
+        }
+        #two{
+            padding: 20px;
+            margin-top: 2.cm;
+            border: solid;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center" id="header">
+                <h1> Fast-track Vehicle Parking </h1>
+                <ul>
+                    <li><a href="login1.php">Home</a></li>
+                    <li><a href="qr.html"> UPI Payment</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="one">
+        <img src="./images/GPAY.jpeg" height="400" width="300">
+    </div>
+    <div id="two">
+        <h4>Payment For:</h4>
+        <h4> 1 hr.=10 Rs </h4>
+        <h4> 2 hr.=20 Rs </h4>
+        <h4> 4 hr.=40 Rs </h4>
+        <h4> 6 hr.=60 Rs </h4>
+        <h4> 24 hr.or Above=240 Rs </h4>
+    </div>
+    <form action="payment.html" method="post">
+        <input type="submit" Value="Procced" class="btn btn-primary my-3">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background:#d8d5d5;
+    text-align: center;
+}
+body h1{
+    color: rgb(23, 19, 12);
+    font-size: 40px;
+}
+.login-form, .admin-form{
+    margin-top: 100px;
+}
+
+.login-form h1, .admin-form h1{
+    font-size: 32px;
+    color: #727f8dec;
+}
+form{
+    margin-top: 35px;
+}
+
+.login-form label, .admin-form label{
+    font-size: 20px;
+    color: #88b1da;
+    font-weight: bold;
+}
+input{
+    height: 20px;
+    width: 17%;
+    font-size: 15px;
+    padding: 0px 6px;
+    outline: none;
+}
+form .submit{
+    background: #34495e;
+    border: transparent;
+    color: rgb(201, 36, 36);
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 40px;
+    width: 10%;
+    margin-top: 15px;
+    transition: all 0.5s ease;
+}
+form .submit:hover{
+    background: #fbfdff;
+    cursor: pointer;
+}
+
+#header{
+    background: #34495e;
+}
+
+#header h1{
+    color: hsl(252, 100%, 99%);
+}
+#header ul{
+    display: flex;
+    justify-content: center;
+}
+#header ul li{
+    list-style-type: none;
+    margin: 0px 10px;
+    padding: 4px 10px;
+}
+#header ul li a{
+    color: rgb(231, 35, 35);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+
+}
+#header ul li a:hover{
+    color: rgb(249, 247, 252);
+}

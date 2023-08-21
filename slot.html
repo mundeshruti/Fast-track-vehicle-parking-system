@@ -1,0 +1,243 @@
+<html>
+
+<head>
+    <style>
+        * {
+            align-items: center;
+            text-align: center;
+        }
+
+        /*div {
+            text-align: left;
+            align-items: inherit;
+            width: 100px;
+            height: 100px;
+            color: rgb(14, 9, 3);
+            font-size: 20px;
+            display: inline-block;
+            border-width: 3px;
+            border-color: rgb(12, 59, 213);
+            border-style: solid;
+            padding: 10px;
+            margin: 10px;
+            text-align: left;
+
+        }
+        */
+        .parking-slot {
+            width: 20px;
+            height: 10px;
+            text-align: left;
+            color: rgb(7, 1, 1);
+        }
+
+        .card-block {
+            text-align: left;
+            width: 10%;
+            display: inline-block;
+
+
+        }
+
+        #header ul li a:hover {
+            color: rgb(0, 0, 0);
+
+        }
+
+        .submit {
+            padding: 5px;
+            margin: 5px;
+            background-color: rgb(228, 245, 240);
+            font-family: 'Times New Roman', Times, serif;
+            font-display: bold;
+            font-size: larger;
+            text-align: center;
+            align-items: center;
+
+        }
+
+        body {
+            background-repeat: no-repeat;
+        }
+
+        #box {
+            width: 100;
+            height: 100;
+            text-align: left;
+            color: rgb(7, 1, 1);
+            border-style: solid;
+            display: inline-block;
+            background-color: rgb(24, 173, 29);
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .booking ul {
+            list-style: none;
+            padding: 0;
+            width: 100px;
+            display: inline;
+       
+        }
+
+        .booking li {
+            border: 1px outset rgb(0, 0, 0);
+            border-radius: 6px;
+            background: #eee;
+            padding: 7px;
+            text-align: center;
+            margin-bottom: 3px;
+            font-family: Arial, sans-serif;
+            display: inline-block;
+            width: 150px;
+            height: 110px;
+        }
+
+        .booking li.checked {
+            background: rgb(79, 241, 114);
+
+        }
+
+        .booking li:hover {
+            background: rgb(195, 239, 224);
+
+        }
+
+        .booking li input {
+            display: none;
+
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<body>
+    <form>
+        <div class="booking">
+            <ul>
+                <li>
+                    <input type="radio" id="time-0000" name="time" value="12:00">
+                    <label for="time-0000">A1</label>
+                </li>
+
+
+                <li>
+                    <input type="radio" id="time-0100" name="time" value="01:00">
+                    <label for="time-0100">A2</label>
+                </li>
+
+                <li>
+                    <input type="radio" id="time-0200" name="time" value="02:00">
+                    <label for="time-0200">A3</label>
+                </li>
+
+                <li>
+                    <input type="radio" id="time-0300" name="time" value="03:00">
+                    <label for="time-0300">A4</label>
+                </li>
+
+                <li>
+                    <input type="radio" id="time-0400" name="time" value="04:00">
+                    <label for="time-0400">A5</label>
+                </li>
+                <li>
+                    <input type="radio" id="time-0400" name="time" value="04:00">
+                    <label for="time-0400">A6</label>
+                </li>
+                <li>
+                    <input type="radio" id="time-0400" name="time" value="04:00">
+                    <label for="time-0400">A7</label>
+                </li>
+                <li>
+                    <input type="radio" id="time-0400" name="time" value="04:00">
+                    <label for="time-0400">B1</label>
+                </li>
+                <li>
+                    <input type="radio" id="time-0400" name="time" value="04:00">
+                    <label for="time-0400">B2</label>
+                </li>
+                <li>
+                    <input type="radio" id="time-0400" name="time" value="04:00">
+                    <label for="time-0400">B3</label>
+                </li>
+                <li>
+                    <input type="radio" id="time-0400" name="time" value="04:00">
+                    <label for="time-0400">B4</label>
+                </li>
+                <li>
+                    <input type="radio" id="time-0400" name="time" value="04:00">
+                    <label for="time-0400">B5</label>
+                </li>
+                <li>
+                    <input type="radio" id="time-0400" name="time" value="04:00">
+                    <label for="time-0400">B6</label>
+                </li>
+                <li>
+                    <input type="radio" id="time-0400" name="time" value="04:00">
+                    <label for="time-0400">B7</label>
+                </li>
+                <li>
+                    <input type="radio" id="time-0400" name="time" value="04:00">
+                    <label for="time-0400">C1</label>
+                </li>
+                <li>
+                    <input type="radio" id="time-0400" name="time" value="04:00">
+                    <label for="time-0400">C2</label>
+                </li>
+                <li>
+                    <input type="radio" id="time-0400" name="time" value="04:00">
+                    <label for="time-0400">C3</label>
+                </li>
+                <li>
+                    <input type="radio" id="time-0400" name="time" value="04:00">
+                    <label for="time-0400">C4</label>
+                </li>
+                <li>
+                    <input type="radio" id="time-0400" name="time" value="04:00">
+                    <label for="time-0400">C5</label>
+                </li>
+                <li>
+                    <input type="radio" id="time-0400" name="time" value="04:00">
+                    <label for="time-0400">C6</label>
+                </li>
+                <li>
+                    <input type="radio" id="time-0400" name="time" value="04:00">
+                    <label for="time-0400">C7</label>
+                </li>
+                <li>
+                    <input type="radio" id="time-0400" name="time" value="04:00">
+                    <label for="time-0400">S1</label>
+                </li>
+                <li>
+                    <input type="radio" id="time-0400" name="time" value="04:00">
+                    <label for="time-0400">S2</label>
+                </li>
+                <li>
+                    <input type="radio" id="time-0400" name="time" value="04:00">
+                    <label for="time-0400">S3</label>
+                </li>
+            </ul>
+        </div>
+    </form>
+</body>
+<script>
+    $(function () {
+        $(".booking label").click(function () {
+            var $self = $(this).parent();
+            $("input", $self).trigger("click");
+            $(".checked").removeClass("checked");
+            $self.addClass("checked");
+        });
+        $("form").submit(function (e) {
+            e.preventDefault();
+            var formData = new FormData(this);
+            for (var pair of formData.entries()) {
+                console.log(pair[0] + ', ' + pair[1]);
+            }
+        });
+    });
+</script>
+
+<input type="submit" name="submit" class="submit" value="Book Now" onclick="location.href='qr.html'">
+</body>
+
+</html>

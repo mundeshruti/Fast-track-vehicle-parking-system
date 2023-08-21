@@ -1,0 +1,23 @@
+*{
+    background-color: white;
+    text-align: center;
+}
+.img{
+    
+    height: 30;
+    width: 30;
+}
+.label{
+    color: black;
+}
+.one{
+    padding: 1px;
+    background-color: aqua;
+}
+.submit{
+    padding: 5px;
+    margin: 5px;
+    background-color: aquamarine;
+    font-family: 'Times New Roman', Times, serif;
+    font-display: bold;
+}
